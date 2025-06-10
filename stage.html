@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Arne Madalijns - Projecten</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <meta name="author" content="Arne Madalijns" />
+    <meta name="description" content="Welkom op mijn CV-website, op deze site vindt u wat meer informatie over wie ik ben en wat ik doe en kunt u mijn projecten bekijken." />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-touch-icon-144x144a.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-touch-icon-114x114a.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-touch-icon-72x72a.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-touch-icon-57x57a.png">
+	<link rel="shortcut icon" href="../assets/images/favicons/favicona.png" type="image/png">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style-dark.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/demo/style-demo.css"/>
+	
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+	    <div class="preloader__wrap">
+		    <div class="circle-pulse">
+                <div class="circle-pulse__1"></div>
+                <div class="circle-pulse__2"></div>
+            </div>
+		    <div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+
+    <!-- Popup structuur -->
+    <div class="popup-overlay" id="popup">
+        <div class="popup">
+        <h2>Info!</h2>
+        <p>Deze pagina is nog in opbouw.</p>
+        <button onclick="closePopup()">OK</button>
+        </div>
+    </div>
+
+	<!-- Scroll Indicator -->
+    <div class="scroll-line"></div>
+
+    <main class="main">
+	    <!-- Header Image -->
+		<div class="header-image">
+		    <div class="js-parallax" style="background-image: url(../assets/img/server2.jpg);"></div>
+		</div>
+		
+	    <div class="container gutter-top">
+
+			<!-- Banner-sectie -->
+			<div id="banner"></div>
+		        
+			<div class="row sticky-parent">
+			    <!-- Sidebar nav -->
+				<aside class="col-12 col-md-12 col-lg-2">
+					<div class="sidebar box sticky-column">
+						<div id="menu"></div>										
+					</div>
+				</aside>
+				
+				<!-- Content -->
+		        <div class="col-12 col-md-12 col-lg-10">
+				    <div class="box box-content">
+						<!-- Post -->
+						<div class="pb-3">
+						    <header class="header-post">
+                                <h1 class="title title--h1">Stage Cegeka</h1>
+								<div class="caption-post">
+								    <p>
+										Ik heb drie maanden stage gelopen bij <b>Cegeka</b> in Hasselt. Cegeka is een toonaangevend IT-bedrijf met hoofdkantoor in Hasselt, België. 
+                                        Ze bieden een breed scala aan IT-oplossingen en diensten, waaronder applicatieontwikkeling, infrastructuurbeheer, dataoplossingen, cloudservices en consultancy. 
+                                        Cegeka staat bekend om zijn klantgerichte aanpak en streeft naar nauwe samenwerking <b>(in close cooperation)</b> met hun klanten. 
+									</p>
+
+                                    <p>
+                                        Hier kreeg ik de kans om me te verdiepen in <b>cloud networking en load balancing</b> binnen <b>Microsoft Azure.</b> Ik behoorde tot het 
+                                        <b>Network Operations Center (NOC) team</b>, dat instaat voor de 24/7 monitoring en het operationele beheer van het netwerk- en security-infrastructuur van Cegeka’s klanten.
+                                    </p>
+
+                                    <p>
+                                        Mijn opdracht bestond uit het configureren en testen van alle <b>native Azure load balancers</b>, met als doel een vergelijkende analyse op te stellen. 
+                                        Daarnaast werkte ik aan het opzetten van een high availability cluster met twee <b>F5 BIG-IP</b> load balancers in de cloud. Deze opstelling werd vergeleken met de 
+                                        traditionele on-premisesvariant om zo de voor- en nadelen in kaart te brengen en te onderzoeken of deze oplossing als nieuwe dienst aan klanten kon worden aangeboden.
+                                    </p>
+								</div>
+								<div class="cropped">
+								    <img class="cover lazyload" src="../assets/img/fotos/projectStage/cegekaDatacenter.jpg" alt="Cegeka Hasselt Universiteitslaan"/>
+								</div>
+							</header>
+							<div class="caption-post">
+                                <p>
+                                    Mijn stage was opgedeeld in zes fases, waarbij elke fase bestond uit verschillende opdrachten. 
+                                </p>
+
+								<!-- ----------- FASE 1 ----------- -->
+                                <h3 class="subtitel">🌐 Fase 1: Cloud Networking & Load Balancing</h3>
+                                <p>
+                                    VNETs, subnets, security groups en het verschil tussen L4 en L7 load balancers onderzocht. Daarna heb ik een HA-webomgeving opgezet over meerdere regio’s met een global load balancer.
+                                </p>
+                                <div class="accordion-block">
+                                    <div class="toggle-header" onclick="toggleImage('wrapper1')">klik voor schematische weergave</div>
+                                    <div id="wrapper1" class="image-wrapper">
+                                      <img class="cover toggle-image" src="../assets/img/fotos/projectStage/cross-region-lb-setup.png" alt="cross-region schema">
+                                    </div>
+                                </div>
+
+								<!-- ----------- FASE 2 ----------- -->
+								<h3 class="subtitel">🖥️Fase 2: F5 BIG-IP in de cloud</h3>
+                                <p>
+                                    Een HA-cluster opgezet in Azure op twee manieren: via een standaard Load Balancer en met Cloud Failover Extension (CFE) die het actieve IP automatisch verplaatst bij failover via API-calls.
+                                </p>
+
+								<div class="accordion-block">
+									<div class="toggle-header" onclick="toggleImage('wrapper2')">klik voor schematische weergave</div>
+									<div id="wrapper2" class="image-wrapper">
+									  <div class="carousel" id="carousel2">
+										<img src="../assets/img/fotos/projectStage/ha-f5-pair-azure-lb.png" class="active" alt="HA F5 pair met azure lb schema">
+										<img src="../assets/img/fotos/projectStage/ha-f5-pair-cfe-1.png" alt="HA F5 pair met CFE 1 schema">
+										<img src="../assets/img/fotos/projectStage/ha-f5-pair-cfe-2.png" alt="HA F5 pair met CFE 2 schema">
+										<button class="prev" onclick="changeSlide('carousel2', -1)">‹</button>
+										<button class="next" onclick="changeSlide('carousel2', 1)">›</button>
+									  </div>
+									</div>
+								</div>
+								
+								<!-- ----------- FASE 3 ----------- -->
+                                <h3 class="subtitel">⚙️Fase 3: Automatisatie met Terraform & Ansible</h3>
+                                <p>
+									F5-omgeving volledig geautomatiseerd met Terraform voor de VM-setup inclusief netwerken, NICs en security groups. Daarna F5-configuratie gedaan via Ansible met TMSH, 
+									CFE-installatie en API-config via CURL en iControl en tot slot SSH access ingesteld via Cloud-Init.
+							
+								<!-- ----------- FASE 4 ----------- -->
+                                <h3 class="subtitel">🌍Fase 4: Traffic Manager & Application Gateway</h3>
+                                <p>
+                                    Verdergegaan met Azure-native oplossingen. Getest met Traffic Manager (latency, weighted, geo-routing) en Application Gateway (path-based routing, redirects, rewrite rules, custom error pages).
+                                </p>
+
+								<div class="accordion-block">
+									<div class="toggle-header" onclick="toggleImage('wrapper3')">klik voor schematische weergave</div>
+									<div id="wrapper3" class="image-wrapper">
+									  <div class="carousel" id="carousel3">
+										<img src="../assets/img/fotos/projectStage/traffic-manager-performance.png" class="active" alt="Traffic Manager Performance schema">
+										<img src="../assets/img/fotos/projectStage/traffic-manager-weighted.png" alt="Traffic Manager Weighted schema">
+										<img src="../assets/img/fotos/projectStage/traffic-manager-geographic.png" alt="Traffic Manager Geographic schema">
+										<img src="../assets/img/fotos/projectStage/application-gateway.png" class="" alt="Application Gateway schema">
+										<button class="prev" onclick="changeSlide('carousel3', -1)">‹</button>
+										<button class="next" onclick="changeSlide('carousel3', 1)">›</button>
+									  </div>
+									</div>
+								</div>
+
+								<!-- ----------- FASE 5 & 6 ----------- -->
+                                <h3 class="subtitel">🧾Fase 5 & 6: Documentatie, analyse en aanbevelingen</h3>
+                                <p>
+                                    Tot slot bundelde ik alle kennis in een overzichtelijk document. Met behulp van een WRM-analyse (Weighted Ranking Method) evalueerde ik de sterktes van elke oplossing. 
+                                    Ik werkte ook meerdere use cases uit, zodat er per scenario een passende load balancer kon worden gekozen.    
+                                </p> 
+
+								<hr class="section-divider">
+
+								<p>
+									Hieronder vindt u de documenten die ik in het kader van mijn stage heb gemaakt en dieper ingaan op bepaalde aspecten hiervan:
+								</p>
+
+								<br>
+
+								<div class="document-links">
+									<a href="assets/projectplan_Arne_Madalijns.pdf" target="_blank">Plan van aanpak</a>
+									<a href="assets/realisatiedocument_Arne_Madalijns.pdf" target="_blank">Realisatiedocument</a>
+									<a href="assets/reflectierapport_Arne_Madalijns.pdf" target="_blank">Reflectierapport</a>
+									<a href="assets/Cegeka_documentatie.zip" target="_blank">Cegeka documentatie</a>
+									<a href="assets/Stagedocumenten_ArneMadalijns.zip" target="_blank">Download alles als ZIP</a>
+								</div>
+								  
+						    </div>
+						</div>
+						
+					</div>
+					
+					<!-- Footer -->
+					<footer class="footer">Copyright © <span class="year"></span> Arne Madalijns</footer>
+		        </div>
+			</div>
+		</div>	
+    </main>
+
+    <div class="back-to-top"></div>
+	
+    <!-- SVG masks -->
+    <svg class="svg-defs">
+        <clipPath id="avatar-box">
+            <path d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z"/>
+        </clipPath>
+        <clipPath id="avatar-hexagon">
+             <path d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z"/>
+        </clipPath>		
+    </svg>
+	
+	<!-- JavaScripts -->
+	<script src="../assets/js/jquery-3.4.1.min.js"></script>
+	<script src="../assets/js/plugins.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    
+	<script src="../assets/demo/plugins-demo.js"></script>
+	<script src="../assets/js/custom.js?v=3"></script>
+</body>
+</html>

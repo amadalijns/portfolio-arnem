@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Arne Madalijns - Skills</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <meta name="author" content="Arne Madalijns" />
+    <meta name="description" content="Welkom op mijn CV-website, op deze site vindt u wat meer informatie over wie ik ben en wat ik doe en kunt u mijn projecten bekijken." />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-touch-icon-144x144a.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-touch-icon-114x114a.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-touch-icon-72x72a.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-touch-icon-57x57a.png">
+	<link rel="shortcut icon" href="../assets/images/favicons/favicona.png" type="image/png">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style-dark.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/demo/style-demo.css"/>
+	
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+	    <div class="preloader__wrap">
+		    <div class="circle-pulse">
+                <div class="circle-pulse__1"></div>
+                <div class="circle-pulse__2"></div>
+            </div>
+		    <div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+
+    <main class="main">
+	    <!-- Header Image -->
+		<div class="header-image">
+			<div class="js-parallax" style="background-image: url(../assets/img/server2.jpg);"></div>
+		</div>
+		
+	    <div class="container gutter-top">
+
+			<!-- Banner-sectie -->
+			<div id="banner"></div>
+			
+		    <div class="row sticky-parent">
+			    <!-- Sidebar nav -->
+				<aside class="col-12 col-md-12 col-lg-2">
+					<div class="sidebar box sticky-column">
+						<div id="menu"></div>										
+					</div>
+				</aside>
+				
+		        <!-- Content -->
+		        <div class="col-12 col-md-12 col-lg-10">
+				    <div class="box box-content">											
+						<div class="col-12">
+							<h1 class="title title--h1 first-title title__separate">Technical skills</h1>
+							<!-- Item -->
+							<h4>Linux Servers</h4>
+							<p style="font-size: 17.5px; color: #D3D7D6;">Unraid | Apache | Docker</p>
+							<p class="timeline__description">
+								Thuis heb ik een Dell PowerEdge R710 met 80GB RAM staan waar ik Unraid als main OS op heb runnen. Ik gebruik dit vooral als storage-server, maar ook om er websites en andere
+								applicaties op te hosten.
+							</p>
+
+							<p>
+								Mijn server beschikt over een aantal docker containers, zo gebruik ik Nextcloud om mijn eigen lokale NAS om te toveren tot cloud-opslag die ik van buitenaf 
+								kan bereiken, Pi-Hole om het netwerk advertentie vrij te houden, Plex als media-server zodat ik mijn favoriete films en series overal ter wereld kan bekijken
+								vanaf de NAS en gebruik ik NGINX als reverse proxy.
+							</p>
+
+							<br>
+							
+							<!-- Item -->
+							<h4>Netwerken</h4>
+							<p style="font-size: 17.5px; color: #D3D7D6;">VLAN's | Smart Home</p>
+							<p class="timeline__description">
+								Networking interesseert me enorm, zonder netwerken zou het internet simpelweg niet bestaan. Ik heb een UniFi Dream Machine Pro met daarin verschillende VLAN's
+								die het netwerk snel en veilig houden. Zo hebben onze camera's, IoT-apparaten, main devices en de gasten op ons netwerk elk een aparte VLAN dat zo ingesteld is dat ze enkel met
+								de nodige apparaten en de apparaten op hun VLAN mogen communiceren. Ook beschik ik over twee UniFi AP's die een snelle WiFi dekking geven over heel het huis.
+							</p>
+
+							<p>
+								Natuurlijk kan in <span class="year"></span> het Smart Home niet ontbreken. Op mijn server heb ik Home Assistant runnen, dit is een programma dat allerlei smart-home-apparaten samenbrengt in één app.
+								Je kan deze helemaal naar wens instellen en zelfs een eigen dashboard programmeren. Hierin staan ook een aantal routines in geprogrammeerd bv. wanneer ik in mijn kamer
+								kom detecteert de bewegingssensor iets en gaan mijn lampen en de computer aan en als ik 's avonds naar beneden ga gaat alles automatisch weer uit.
+							</p>
+
+							<br>
+
+							<!-- Item -->
+							<h4>Security</h4>
+							<p style="font-size: 17.5px; color: #D3D7D6;">SOC | TryHackme | Challenges</p>
+							<p class="subtitel">SOC</p>
+							<p class="timeline__description">
+								In mijn homelab heb ik een SOC (Security Operations Center) opgezet om beter te begrijpen hoe je systemen actief kunt monitoren en beveiligen. 
+								Hiervoor heb ik verschillende tools met elkaar laten samenwerken, waaronder een <a href="https://en.wikipedia.org/wiki/Security_information_and_event_management" target="_blank">SIEM</a>, 
+								threat intel integraties en active response. De focus ligt op het verzamelen en analyseren van logs, het detecteren van verdachte activiteiten en het automatisch reageren op 
+								bepaalde dreigingen.
+							</p>
+
+							<p>
+								Deze setup helpt me om meer praktijkervaring op te doen met alerting, incident response en threat hunting. 
+								<br>
+								👉 Meer info over dit project 👉 <a href="projectSOC.html" target="_blank">Project SOC</a>
+							</p>
+
+							<p class="subtitel">
+								TryHackMe
+							</p>
+								Om mijn kennis en praktijkervaring verder uit te breiden, oefen ik regelmatig met TryHackMe rooms. Via deze oefeningen krijg ik niet alleen meer kennis van de verschillende domeinen 
+								binnen cybersecurity, maar doe ik ook hands-on ervaring op binnen zowel defensieve (blue teaming) als offensieve (red teaming).
+							<p>
+
+							<p>
+								Ik doe graag zowel defensive als offensive oefeningen. Zo leer ik hoe je aanvallen kunt herkennen en blokkeren, maar ook hoe aanvallers precies te werk gaan. Door beide kanten te 
+								oefenen, krijg ik een beter beeld van hoe aanvallen in de praktijk gebeuren en aangepakt kunnen worden.
+							</p>
+
+							</p>
+
+							<p class="subtitel">
+								Challenges
+							</p>
+
+							<p>
+								Samen met mijn team nam ik deel aan de <a href="https://www.cybersecuritychallenge.be/" target="_blank">Cyber Security Challenge Belgium 2024</a>, een wedstrijd waarbij we allerlei soorten CTF's (Capture the Flag) moesten oplossen. 
+								De opdrachten varieerden in moeilijkheid van eenvoudig tot zeer moeilijk.
+							</p>
+
+							<p>
+								Binnen ons team had iedereen wat meer kennis per soort oefening. De één had meer ervaring met webgebaseerde aanvallen, terwijl iemand anders sterk was in het reverse engineeren 
+								van software. Door onze verschillende sterktes konden we elkaar goed aanvullen tijdens het oplossen van de challenges.
+							</p>
+
+							<br>
+
+							<!-- Item -->
+							<h4>Cloud</h4>
+							<p style="font-size: 17.5px; color: #D3D7D6;">AWS | Automatisering | Pipelines</p>
+							<p class="timeline__description">
+								Tijdens mijn opleiding heb ik op het gebied van cloud engineering voornamelijk gewerkt met Amazon Web Services (AWS), waarbij we via verschillende 
+								opdrachten praktijkervaring opdeden met cloudplatformen en Infrastructure as Code (IaC).
+							</p>
+
+							<p>
+								Een van de eerste opdrachten was het maken van een Python-script dat automatisch een EC2-instance (virtuele machine in AWS) kon aanmaken. De gebruiker kon zelf kiezen welk 
+								besturingssysteem hij wilde en het script zorgde er vervolgens voor dat de instance correct werd opgezet in AWS.
+							</p>
+
+							<p>
+								Naarmate de opleiding vorderde, werden de projecten complexer. Zo kregen we de opdracht om een multi-cloudapplicatie te bouwen met Terraform, waarbij zowel AWS als Azure 
+								werd gebruikt. We moesten het spel Galgje hosten in de cloud, waarbij de API draaide in een containeromgeving op Azure en de frontend werd gehost op AWS binnen een Auto Scaling Group (ASG).
+							</p>
+
+							<p>
+								In project <a href="projectFrankDeBank.html" target="_blank">Frank de Pratende Bank</a> lag mijn verantwoordelijkheid bij het volledige deploymentproces via GitLab Pipelines. Elke keer als er nieuwe code werd gepusht, werd deze gecontroleerd 
+								op fouten en beveiligingsproblemen. Daarna werd de applicatie omgevormd tot een Docker-image, getest, en als alles in orde was automatisch uitgerold naar de productieomgeving in Azure.
+							</p>
+
+							<br>
+
+							<h1 class="title title--h1 first-title title__separate">Soft skills</h1>
+							<p style="font-size: 17.5px; color: #D3D7D6;">Communicatie | Samenwerking</p>
+							<p class="timeline__description">
+								Tijdens mijn schoolcarrière ben ik enorm gegroeid op gebied van communicatie en samenwerking. Door de vele presentaties die ik heb moeten voorbrengen kan ik met veel zekerheid 
+								zeggen dat mijn communicatievaardigheden hierdoor sterk gegroeid zijn en ik hierdoor ook minder stress heb om voor een groep (on)bekende mensen te spreken.
+							</p>
+
+							<p>
+								Bovendien heb ik dankzij de groepswerken leren efficiënt samenwerken in een groep. Eerder werkte ik altijd samen met mijn gekende vrienden, wat altijd wel een leuke
+								sfeer en mooie eindresultaten gaf. Door in groepen geplaatst te worden met mensen die ik minder goed kende, heb ik geleerd om beter samen te werken, te brainstormen, het verdelen 
+								van taken en het samenwerken via GitHub of andere diensten.
+							</p>
+						</div>
+					</div>
+					<!-- Footer -->
+					<footer class="footer">Copyright © <span class="year"></span> Arne Madalijns</footer>
+		        </div>
+			</div>
+		</div>
+    </main>
+
+    <div class="back-to-top"></div>
+	
+    <!-- SVG masks -->
+    <svg class="svg-defs">
+        <clipPath id="avatar-box">
+            <path d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z"/>
+        </clipPath>
+        <clipPath id="avatar-hexagon">
+             <path d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z"/>
+        </clipPath>		
+    </svg>
+	
+	<!-- JavaScripts -->
+	<script src="../assets/js/jquery-3.4.1.min.js"></script>
+	<script src="../assets/js/plugins.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    
+	<script src="../assets/demo/plugins-demo.js"></script>
+	<script src="../assets/js/custom.js"></script>
+</body>
+</html>

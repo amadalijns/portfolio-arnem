@@ -1,0 +1,14 @@
+----- AI-gebruik tijdens mijn stage / bachelorproef -----
+
+Tijdens dit project heb ik gebruikgemaakt van AI ter ondersteuning bij zowel de ontwikkeling van de website als het schrijven van de documentatie.
+
+Voor de website heeft AI mij geholpen bij het toevoegen van bepaalde functies en het geven van creatieve ideeen. 
+Bij het schrijven van teksten heb ik eerst zelf een klad versie opgesteld, waarna AI deze herschreef naar een meer formele en duidelijke versie. 
+Dit geldt voor alle teksten op de website en in de documenten.
+
+AI heeft geen invloed gehad op de inhoud van mijn onderzoek of op de onderbouwde keuzes en conclusies binnen mijn stage.
+
+Kort samengevat:
+- AI is gebruikt voor het herschrijven van teksten en geven van ideeen.
+- Alle inhoud is eerst door mijzelf geschreven in klad.
+- AI had geen invloed op analyses, onderzoeksresultaten of keuzes.

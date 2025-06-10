@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Arne Madalijns - Projecten</title>
+
+	<!-- Meta Data -->
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="format-detection" content="telephone=no"/>
+    <meta name="format-detection" content="address=no"/>
+    <meta name="author" content="Arne Madalijns" />
+    <meta name="description" content="Welkom op mijn CV-website, op deze site vindt u wat meer informatie over wie ik ben en wat ik doe en kunt u mijn projecten bekijken." />
+
+	<!-- Favicons -->
+	<link rel="apple-touch-icon" sizes="144x144" href="../assets/images/favicons/apple-touch-icon-144x144a.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="../assets/images/favicons/apple-touch-icon-114x114a.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="../assets/images/favicons/apple-touch-icon-72x72a.png">
+	<link rel="apple-touch-icon" sizes="57x57" href="../assets/images/favicons/apple-touch-icon-57x57a.png">
+	<link rel="shortcut icon" href="../assets/images/favicons/favicona.png" type="image/png">
+
+    <!-- Styles -->
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style.css"/>
+	<link rel="stylesheet" type="text/css" href="../assets/styles/style-dark.css"/>
+    <link rel="stylesheet" type="text/css" href="../assets/demo/style-demo.css"/>
+	
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+	    <div class="preloader__wrap">
+		    <div class="circle-pulse">
+                <div class="circle-pulse__1"></div>
+                <div class="circle-pulse__2"></div>
+            </div>
+		    <div class="preloader__progress"><span></span></div>
+		</div>
+	</div>
+
+	<!-- Scroll Indicator -->
+    <div class="scroll-line"></div>
+
+    <main class="main">
+	    <!-- Header Image -->
+		<div class="header-image">
+		    <div class="js-parallax" style="background-image: url(../assets/img/server2.jpg);"></div>
+		</div>
+		
+	    <div class="container gutter-top">
+
+			<!-- Banner-sectie -->
+			<div id="banner"></div>
+		        
+			<div class="row sticky-parent">
+			    <!-- Sidebar nav -->
+				<aside class="col-12 col-md-12 col-lg-2">
+					<div class="sidebar box sticky-column">
+						<div id="menu"></div>										
+					</div>
+				</aside>
+				
+				<!-- Content -->
+		        <div class="col-12 col-md-12 col-lg-10">
+				    <div class="box box-content">
+						<!-- Post -->
+						<div class="pb-3">
+						    <header class="header-post">
+                                <h1 class="title title--h1">Frank de Pratende Bank</h1>
+								<div class="caption-post">
+								    <p>
+										Voor ons vak Project 4.0 kregen we de opdracht om voor <a href="https://www.rurant.be/" target="_blank">Rurant</a> een pratende AI-bank te ontwikkelen. Ons team bestond uit zes leden, 
+                                        verdeeld over drie IT-richtingen: drie applicatieontwikkelaars, twee AI-studenten en ik als cloud- en securitystudent.
+									</p>
+
+                                    <p>
+                                        Even wat achtergrondinformatie: Frank de Pratende Bank is een unieke, laagdrempelige manier om inwoners te betrekken bij de toekomst van hun publieke ruimte. 
+                                        Met behulp van AI kan deze slimme bank gesprekken voeren en vragen stellen over hoe mensen hun dorpsplein, pastorijtuin of park in de toekomst willen zien.
+                                    </p>
+    
+                                    <p>
+                                        Door letterlijk op de plek te zitten waar de verandering plaatsvindt, krijgen inwoners de kans om hun ideeën en wensen direct te delen. Dit helpt bij het creëren van 
+                                        een kwalitatiever en inclusiever ontwerp voor de publieke ruimte. Frank maakt deelnemen toegankelijk voor iedereen die even langskomt, waardoor meer diverse stemmen 
+                                        worden gehoord en nieuwe inzichten ontstaan.
+                                    </p>
+								</div>
+								<div class="cropped">
+								    <img class="cover lazyload" src="../assets/img/fotos/frankdebank/dashboard.png"/>
+								</div>
+							</header>
+							<div class="caption-post">
+								<h3 class="subtitel">Technische aspecten</h3>
+								<p>
+									Om Frank de Pratende Bank optimaal te integreren, ontwikkelden we een oplossing met een Raspberry Pi en een USB-telefoonhoorn. 
+                                    De Raspberry Pi verwerkt spraak met speech-to-text (STT) en text-to-speech (TTS) software en stuurt de tekst via een API naar een cloud-AI-dienst, 
+                                    die de antwoorden van Frank genereert. De telefoonhoorn biedt meer privacy en voorkomt verstoring door omgevingsgeluiden zoals wind.
+								</p>
+
+								<p>
+									Onze applicatieontwikkelaars bouwden een gebruiksvriendelijk dashboard om vragen, antwoorden van bezoekers en instellingen van de bank te beheren. 
+                                    Ze ontwikkelden ook een API waarmee de Raspberry Pi gegevens uitwisselt en kan communiceren met de rest van het project.
+								</p>
+
+                                <p>
+                                    De opstelling is volledig plug-and-play: zodra de Raspberry Pi wordt aangesloten, start hij automatisch op en start alle software. 
+                                    LED-indicatoren tonen de status van Frank: opstarten, gereed of luisteren.
+                                </p>
+						    </div>
+							<div class="gallery-post">
+								<img class="gallery-post__item cover lazyload" src="../assets/img/fotos/frankdebank/sprint2.jpg"/>
+								<img class="gallery-post__item cover lazyload" src="../assets/img/fotos/frankdebank/sprint3.jpg"/>
+								<div class="gallery-post__caption">dashboard + telefoon & achter de schermen</div>
+							</div>
+
+							<h3 class="subtitel" style="margin-top: 0%;">Rolverdeling</h3>
+							<p>
+								Mijn rol in dit project was het hosten van de applicaties van onze ontwikkelaars (dashboard, API en database) in de cloud. 
+                                Daarnaast heb ik een geautomatiseerd proces opgezet om van de verschillende soorten code Docker-images te maken, deze te testen en bij een succesvolle test automatisch te 
+                                deployen in onze cloudomgeving via CI/CD-pipelines.
+							</p>
+
+							<h3 class="subtitel">Promotievideo</h3>
+							<p>
+								Als extra toevoeging hebben we een promotievideo gemaakt die Frank de Pratende Bank in actie toont en uitleg geeft over het dashboard en de werking ervan. 
+                                Daarnaast heeft Rurant besloten om met onze oplossing (uit de drie ingediende teams) verder te gaan om Frank écht te ontwikkelen op basis van ons prototype.
+							</p>
+
+                            <p>
+                                👇 Bekijk hieronder onze promotievideo 👇
+                            </p>
+
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/zBHCjNPxpvg" allowfullscreen></iframe>
+                            </div>                            
+						</div>
+						
+					</div>
+					
+					<!-- Footer -->
+					<footer class="footer">Copyright © <span class="year"></span> Arne Madalijns</footer>
+		        </div>
+			</div>
+		</div>	
+    </main>
+
+    <div class="back-to-top"></div>
+	
+    <!-- SVG masks -->
+    <svg class="svg-defs">
+        <clipPath id="avatar-box">
+            <path d="M1.85379 38.4859C2.9221 18.6653 18.6653 2.92275 38.4858 1.85453 56.0986.905299 77.2792 0 94 0c16.721 0 37.901.905299 55.514 1.85453 19.821 1.06822 35.564 16.81077 36.632 36.63137C187.095 56.0922 188 77.267 188 94c0 16.733-.905 37.908-1.854 55.514-1.068 19.821-16.811 35.563-36.632 36.631C131.901 187.095 110.721 188 94 188c-16.7208 0-37.9014-.905-55.5142-1.855-19.8205-1.068-35.5637-16.81-36.63201-36.631C.904831 131.908 0 110.733 0 94c0-16.733.904831-37.9078 1.85379-55.5141z"/>
+        </clipPath>
+        <clipPath id="avatar-hexagon">
+             <path d="M0 27.2891c0-4.6662 2.4889-8.976 6.52491-11.2986L31.308 1.72845c3.98-2.290382 8.8697-2.305446 12.8637-.03963l25.234 14.31558C73.4807 18.3162 76 22.6478 76 27.3426V56.684c0 4.6805-2.5041 9.0013-6.5597 11.3186L44.4317 82.2915c-3.9869 2.278-8.8765 2.278-12.8634 0L6.55974 68.0026C2.50414 65.6853 0 61.3645 0 56.684V27.2891z"/>
+        </clipPath>		
+    </svg>
+	
+	<!-- JavaScripts -->
+	<script src="../assets/js/jquery-3.4.1.min.js"></script>
+	<script src="../assets/js/plugins.min.js"></script>
+    <script src="../assets/js/common.js"></script>
+    
+	<script src="../assets/demo/plugins-demo.js"></script>
+	<script src="../assets/js/custom.js"></script>
+</body>
+</html>
